@@ -1,13 +1,13 @@
 # Bash Scripting Foundations
 
-Three source-readable Bash examples for machines you own or are authorized to administer.
+Three readable Bash exercises for systems you own or are authorized to administer.
 
-- `file-owner.sh` — show the user and owner of a given path.
-- `number-sequence-generator.sh` — print a requested integer sequence.
+- `file-owner.sh` — display the current user and a file's owner.
+- `number-sequence-generator.sh` — print an integer sequence.
 - `rename-to-lowercase.sh` — preview lowercase filename changes in a directory.
 
-The rename script is **dry-run by default**; review collisions and the source before choosing `--apply`. These scripts are examples, not privileged administration, a software installer, a network service, or an automated maintenance utility.
+Read each script before running it. The rename example is **dry-run by default**; check for collisions before choosing `--apply`. These are educational utilities, not privileged administration, installers, or a network service.
 
-This is a history-free educational portfolio edition. Only three exact-frozen reviewed script files were copied. Historical original commits, private documents, workflows, and other scripts are excluded. `MANIFEST.sha256` records the exact released bytes.
+`MANIFEST.sha256` records the exact source checksums.
 
-**License:** no open-source license is granted by this repository. Source is publicly viewable; request separate permission for redistribution or derivative use.
+**Use and rights:** Source is publicly viewable; no redistribution or derivative-use license is granted here.
