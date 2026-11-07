@@ -36,10 +36,21 @@ main() {
     return 1
   fi
 
+  # Refuse a direct symlinked root. Repointing it could redirect the changes.
+  if [[ -L "$directory" ]]; then
+    printf 'Refusing a symlinked directory: %s\n' "$directory" >&2
+    return 1
+  fi
+
   shopt -s nullglob
 
   local file base lower target
   for file in "$directory"/*; do
+    # A symlink to a regular file passes -f, but must not be renamed here.
+    if [[ -L "$file" ]]; then
+      printf 'Skipping symlink: %s\n' "$file" >&2
+      continue
+    fi
     [[ -f "$file" ]] || continue
 
     base="$(basename "$file")"
