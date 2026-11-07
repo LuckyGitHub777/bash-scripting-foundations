@@ -1,5 +1,7 @@
 # Bash Scripting Foundations
 
+**Explore online:** [Open the public browser experience](https://luckygithub777.github.io/bash-scripting-foundations/). The web page explains the Bash exercises; shell scripts run only on a system you control.
+
 Three readable Bash exercises for systems you own or are authorized to administer.
 
 - `file-owner.sh` — display the current user and a file's owner.
