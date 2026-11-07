@@ -1,4 +1,4 @@
-name: Offline Bash safety and integrity
+name: Bash learning safety and integrity
 on:
   pull_request:
   push:
